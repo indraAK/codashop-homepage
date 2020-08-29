@@ -1,0 +1,86 @@
+.header {
+   background-color: $color-white;
+   box-shadow: 0 2px 1px 0 rgba(2, 2, 2, 0.25);
+
+   &__container {
+      width: 100%;
+      max-width: 76rem;
+      margin: auto;
+      padding: 0 0.8rem;
+      min-height: 5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      @media only screen and (max-width: $bp-mediumest) {
+         padding: 0 1rem;
+      }
+   }
+
+   &__nav {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      min-height: 5rem;
+
+      .logo {
+         display: flex;
+         align-items: center;
+
+         &__slogan {
+            font-weight: 300;
+            font-size: 1.5rem;
+            font-style: italic;
+            margin-left: 1rem;
+
+            @media only screen and (max-width: $bp-mediumest) {
+               display: none;
+            }
+         }
+      }
+
+      .search {
+         &__icon {
+            color: #000;
+            font-size: 2.5rem;
+            cursor: pointer;
+
+            .active {
+               color: $color-primary;
+            }
+         }
+      }
+   }
+
+   .search-form {
+      width: 100%;
+      padding: 0 0 0.5rem;
+      display: none;
+
+      &__container {
+         width: 100%;
+      }
+
+      &__input {
+         font-family: inherit;
+         display: block;
+         width: 100%;
+         padding: 0.9rem 1rem;
+         border: 1px solid #afafaf;
+         border-radius: 3px;
+
+         &:focus {
+            outline: none;
+         }
+
+         &::-webkit-input-placeholder {
+            font-size: 1.5rem;
+         }
+      }
+   }
+
+   .search-form.show {
+      display: block;
+   }
+}

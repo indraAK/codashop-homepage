@@ -1,0 +1,49 @@
+.category {
+   width: 100%;
+   max-width: 74rem;
+   margin: 0 auto 1rem;
+
+   &__container {
+      padding: 0 0.5rem 1.5rem;
+
+      @media only screen and (max-width: $bp-mediumest) {
+         padding: 0 1.3rem 1.5rem;
+      }
+   }
+
+   &__title {
+      text-transform: uppercase;
+      font-size: 2rem;
+      color: $color-white;
+      margin-bottom: 2rem;
+   }
+
+   &__product {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2rem 2.5rem;
+
+      @media only screen and (max-width: $bp-small) {
+         grid-template-columns: repeat(3, 1fr);
+         gap: 1.5rem 1rem;
+      }
+
+      &-container {
+         text-decoration: none;
+      }
+
+      &-img {
+         display: block;
+         width: 100%;
+         object-fit: cover;
+         border-radius: 1.5rem;
+      }
+
+      &-title {
+         color: $color-white;
+         font-size: 1.3rem;
+         padding: 1rem 0;
+         text-align: center;
+      }
+   }
+}

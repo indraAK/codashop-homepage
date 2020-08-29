@@ -1,0 +1,35 @@
+// Color Variable
+$color-primary: #ff6c2c;
+$color-white: #fff;
+$color-grey-dark: #666;
+
+// Font Variable
+$font-primary: "Lato", sans-serif;
+
+// Responsive Breakpoint
+$bp-largest: 75em; // 1200px  -> 1em = 16px, 1200/16 = 75
+$bp-large: 68.75em; // 1100px
+$bp-medium: 56.25em; // 900px
+$bp-mediumest: 48em; // 768px
+$bp-small: 37.5em; // 600px
+$bp-smallest: 31.25em; // 500px
+
+*,
+*::before,
+*::after {
+   margin: 0;
+   padding: 0;
+   box-sizing: inherit;
+}
+
+html {
+   font-size: 62.5%; // 10px/16px*100 = 62.5%, 1rem = 10px
+   box-sizing: border-box;
+}
+
+body {
+   font-family: $font-primary;
+   font-size: 1.6rem;
+   font-weight: 400;
+   background-color: $color-primary;
+}

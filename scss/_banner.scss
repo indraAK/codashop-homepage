@@ -1,0 +1,25 @@
+.banner {
+   margin: 0.8rem 0 1rem;
+   width: 100%;
+   overflow-x: hidden;
+   max-height: 50vw;
+
+   &__container {
+      width: 100%;
+      max-width: 74rem;
+      margin: auto;
+      // padding: 0 0.8rem;
+   }
+
+   &__slide {
+      width: 100%;
+      overflow: hidden;
+      cursor: pointer;
+   }
+
+   &__img {
+      display: block;
+      width: 100%;
+      object-fit: cover;
+   }
+}

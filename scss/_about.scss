@@ -1,0 +1,75 @@
+.about {
+   background-color: $color-white;
+   padding: 3rem 0;
+
+   &__container {
+      width: 100%;
+      max-width: 68rem;
+      margin: auto;
+
+      @media only screen and (max-width: $bp-medium) {
+         max-width: 56rem;
+      }
+
+      @media only screen and (max-width: $bp-small) {
+         padding: 0 2.5rem;
+         margin: auto;
+      }
+
+      @media only screen and (max-width: $bp-smallest) {
+         padding: 0 2.5rem;
+         margin: auto;
+      }
+   }
+
+   &__title {
+      font-size: 2rem;
+      font-weight: 700;
+      padding-bottom: 1rem;
+   }
+
+   &__description {
+      font-size: 1.4rem;
+   }
+
+   .card {
+      list-style: none;
+      margin-top: 3rem;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 4rem 2rem;
+
+      @media only screen and (max-width: $bp-small) {
+         grid-template-columns: 1fr;
+         gap: 3rem 2rem;
+      }
+
+      &__item {
+         display: flex;
+         align-items: flex-start;
+      }
+
+      &__icon {
+         display: block;
+         width: 4rem;
+      }
+
+      &__content {
+         padding: 0 1.5rem;
+      }
+
+      &__title {
+         font-weight: 700;
+         font-size: 1.6rem;
+         margin-bottom: 0.7rem;
+
+         @media only screen and (max-width: $bp-small) {
+            font-size: 1.6rem;
+         }
+      }
+
+      &__description {
+         font-size: 1.3rem;
+      }
+   }
+}
